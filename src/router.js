@@ -1,10 +1,11 @@
 import React from 'react'
 import {Switch, Route} from 'react-router-dom'
 
-import Cart from './components/cart';
-import Details from './components/details';
 import Home from './components/home';
+
 import Watches from './components/watches';
+import Details from './components/details';
+import Cart from './components/cart';
 
 export default (
     <Switch>
