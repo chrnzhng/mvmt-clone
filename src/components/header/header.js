@@ -6,7 +6,7 @@ import { NavDropdown, MenuItem, Grid, Col, Row } from 'react-bootstrap';
 
 const Header = () => {
     return (        
-        <div>
+        <div className="fixed-nav">
         <div className="header-top-navbar">Free Shipping On Orders Over $50</div>
         <Grid>
         <Row className="show-grid">
@@ -43,11 +43,13 @@ const Header = () => {
                     <MenuItem eventKey={3.1}>Action</MenuItem>
                     <MenuItem eventKey={3.2}>Another action</MenuItem>
                 </NavDropdown>
-               <img className= "profile"src= {require('./profile.png')}/>
+               <img className= "profile"src= {require('./user.svg')}/>
                  <NavDropdown eventKey={3} title="Account" id="basic-nav-dropdown">
                 </NavDropdown>
-               <img className= "cart" src= {require('./shopping-cart.png')}/>
-            </Col>
+               <img className= "cart" src= {require('./cart.svg')}/>
+               <img className= "search" src= {require('./search.svg')}/>
+            </Col>         
+            
         </Row>
         </Grid>
         </div>

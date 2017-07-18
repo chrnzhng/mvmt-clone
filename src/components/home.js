@@ -9,7 +9,7 @@ class Home extends Component {
             <div>
                 <Header />                
             </div>
-            <div>
+            <div className="position-relative">
                 <Homebody />
             </div>
             </div>
