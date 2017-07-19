@@ -23,17 +23,17 @@
 }
 
 #basic-nav-dropdown {
-    font-size: 14px;
-    
-}
-
-.li.dropdown {
+    font-size: 18px;
     list-style-type: none;
 }
+
+/* .li.dropdown {
+    list-style-type: none;
+} */
 .header-nav-left{
     display: flex;
     /* justify-content: center;     */
-     padding: 10px; 
+    padding: 10px; 
     max-width: 100%;
     font-family: 'Roboto Condensed', sans-serif;    
 }
@@ -45,7 +45,7 @@
 .header-nav-right{
     display: flex;
     /* justify-content: center; */   
-     padding: 10px; 
+    padding: 10px; 
     max-width: 100%; 
     font-family: 'Roboto Condensed', sans-serif;
 }
@@ -59,8 +59,8 @@
 }
 
 .profile, .cart, .search {
-    height: 10px;
-    margin-top: 5px;
+    height: 14px;
+    margin-top: 4px;
     margin-right: 5px;
     
 }

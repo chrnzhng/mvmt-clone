@@ -11,19 +11,21 @@
 .show-grid {
     display: flex;
     /* max-width:100%;
-    max-height:100%;
-    object-fit: contain; */
+    max-height:100%; 
+    object-fit: contain;  */
 }
 
-.mens {
-    padding-left: 3px;
-    padding-right: 3px;
+ /* .mens {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .womens {
-    padding-right: 3px;
-    
-}
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}  */
 
 .watch_img {
     max-width: 100%;
@@ -42,9 +44,10 @@
 .btn {
     margin-bottom: 5px;
 }
+
 .left-img {
      
-   max-width: 100%;
+    max-width: 100%;
     max-height: 100%;
     object-fit: contain;      
    
@@ -59,10 +62,9 @@
 }
 
 .right-img  {
-     max-width: 100%;
+    max-width: 100%;
     max-height: 100%;
-    object-fit: contain;
-       
+    object-fit: contain;       
           
 }
 /* 
@@ -96,7 +98,7 @@
     width: 100%;
 }
 
-.h4, h3 {
+h1, h2, h3, h4 {
     max-width: 100%;
     max-height: 100%;
     font-family: 'Roboto Condensed', sans-serif;

@@ -5,7 +5,8 @@ import './press_carousel.css';
 class PressCarousel extends Component {
     render() {
         var settings = {
-            arrows: true,
+            autoplay: true,
+            autoplaySpeed: 200,
             dots: true,
             fade: true,
             infinite: true,
@@ -15,7 +16,9 @@ class PressCarousel extends Component {
         }
         return (
             <Slider {...settings}>
-                <div><h3>"MVMT seeks to keep watches simple and affordable while still making a statement with their look"</h3><img className = "test" src= {require('./press-img-1.svg')} /></div>
+                <div><h3>"MVMT seeks to keep watches simple and
+                     affordable while still making a statement
+                     with their look"</h3><img className = "test" src= {require('./press-img-1.svg')} /></div>
                 <div><img className = "test" src= {require('./press-img-2.svg')} /></div>
                 <div><img className = "test" src= {require('./press-img-3.svg')} /></div>
                 <div><img className = "test" src= {require('./press-img-4.svg')} /></div>

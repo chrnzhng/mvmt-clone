@@ -27,7 +27,7 @@ const Homebody = () => {
             <img className = "docks" src= {require('./docks.jpeg')}/>
             </Col>            
             <Col className ="carousel-strap" lg={6} lg={4}> 
-            <img className = "center-block" src= {require('./strap_selector.PNG')} />
+            <img className = "center-block" src= {require('./strap_selector.gif')} />
             </Col>
         </Row>
         <Row className="show-grid">
