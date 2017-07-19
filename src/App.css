@@ -23,7 +23,10 @@
   to { transform: rotate(360deg); }
 } */
 
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700');
+
 .App {
   display: flex;
+  
 }
 

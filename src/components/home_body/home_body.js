@@ -1,5 +1,6 @@
 import React from 'react';
 import { Col, Row, Button } from 'react-bootstrap';
+import PressCarousel from './press_carousel/press_carousel.js';
 import './home_body.css';
 
 // const picStyle = {
@@ -22,10 +23,10 @@ const Homebody = () => {
             <img className = "sunglasses" src= {require('./sunglasses.jpeg')} />
             </Col>
         <Row className="show-grid">                
-            <Col md={12} md={8}>
+            <Col lg={12} lg={8}>
             <img className = "docks" src= {require('./docks.jpeg')}/>
             </Col>            
-            <Col className ="carousel-strap" md={6} md={4}> 
+            <Col className ="carousel-strap" lg={6} lg={4}> 
             <img className = "center-block" src= {require('./strap_selector.PNG')} />
             </Col>
         </Row>
@@ -35,25 +36,31 @@ const Homebody = () => {
                 <Button>See Our Story</Button>
             </Col>
         </Row>
-         <section className="instaposts">
+         <Row className="instaposts">
            
-            <div className ="left-insta" >
+            <Col lg={6} lg={4} className ="left-insta" >
                 <img className = "left-img" src= {require('./instagram/left-one.jpg')} />
+                 {/* <img className = "left-img" src= {require('./instagram/left-one.jpg')} />
                 <img className = "left-img" src= {require('./instagram/left-one.jpg')} />
-                <img className = "left-img" src= {require('./instagram/left-one.jpg')} />
-                <img className = "left-img" src= {require('./instagram/left-one.jpg')} />
-            </div>
-            <div className ="center-insta" >
+                <img className = "left-img" src= {require('./instagram/left-one.jpg')} />  */}
+            </Col>
+            <Col lg={6} lg={4} className ="center-insta" >
                 <img className = "center-img" src= {require('./instagram/center.jpg')} />                
-            </div>
-            <div className ="right-insta" >
+            </Col>
+            <Col lg={6} lg={4} className ="right-insta" >
                 <img className = "right-img" src= {require('./instagram/left-one.jpg')} />
+                 {/* <img className = "right-img" src= {require('./instagram/left-one.jpg')} />
                 <img className = "right-img" src= {require('./instagram/left-one.jpg')} />
-                <img className = "right-img" src= {require('./instagram/left-one.jpg')} />
-                <img className = "right-img" src= {require('./instagram/left-one.jpg')} />
-            </div>
+                <img className = "right-img" src= {require('./instagram/left-one.jpg')} />  */}
+            </Col>
     
-        </section> 
+        </Row>
+        <Row className="press-block">
+            <Col className="our-story">
+                <h3>See what the press is saying about MVMT</h3>                
+            <PressCarousel className="pressC"/>
+            </Col>
+        </Row> 
         </div>
     
                    
