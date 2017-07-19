@@ -2,15 +2,20 @@ import React from 'react';
 import { Col, Row, Button } from 'react-bootstrap';
 import './home_body.css';
 
+// const picStyle = {
+//     height: '25%',
+//     width: '25%'
+// }
+
 const Homebody = () => {
     return (
         <div className="home-view">
         <Row className="show-grid">                
-            <Col md={6} mdPush={6}>
-            <img className = "watch_img" src= {require('./mens_watches.jpeg')}/>
-            </Col>            
-            <Col md={6} mdPull={6}> 
+            <Col className="mens" lg={6} lgPush={6}>            
             <img className = "watch_img" src= {require('./womens_watches.jpeg')} />
+            </Col>            
+            <Col className="womens" lg={6} lgPull={6}> 
+            <img className = "watch_img" src= {require('./mens_watches.jpeg')}/>
             </Col>           
         </Row>
             <Col className="sunglass_row">
@@ -30,11 +35,31 @@ const Homebody = () => {
                 <Button>See Our Story</Button>
             </Col>
         </Row>
+         <section className="instaposts">
+           
+            <div className ="left-insta" >
+                <img className = "left-img" src= {require('./instagram/left-one.jpg')} />
+                <img className = "left-img" src= {require('./instagram/left-one.jpg')} />
+                <img className = "left-img" src= {require('./instagram/left-one.jpg')} />
+                <img className = "left-img" src= {require('./instagram/left-one.jpg')} />
+            </div>
+            <div className ="center-insta" >
+                <img className = "center-img" src= {require('./instagram/center.jpg')} />                
+            </div>
+            <div className ="right-insta" >
+                <img className = "right-img" src= {require('./instagram/left-one.jpg')} />
+                <img className = "right-img" src= {require('./instagram/left-one.jpg')} />
+                <img className = "right-img" src= {require('./instagram/left-one.jpg')} />
+                <img className = "right-img" src= {require('./instagram/left-one.jpg')} />
+            </div>
+    
+        </section> 
         </div>
-
+    
                    
         
     );
+    
 };
 
 export default Homebody;

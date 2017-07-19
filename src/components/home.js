@@ -6,10 +6,10 @@ class Home extends Component {
     render() {
         return (
             <div>
-            <div>
+            <div className="position-relative">
                 <Header />                
             </div>
-            <div className="position-relative">
+            <div>
                 <Homebody />
             </div>
             </div>
