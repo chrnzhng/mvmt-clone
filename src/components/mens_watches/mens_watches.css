@@ -12,17 +12,27 @@
 
 } */
 
-.large-wrapper {
+.watches-side-nav {
     display: flex;
-    width: 100%;
+    width: 25%;
+    background-color: dodgerblue;
+}
+
+.watches-wrapper {
+    display: flex;
+    width: 75%;
     /* height: 100vh; */
     align-items: baseline;
-    justify-content: flex-end;
+    justify-content: center;
     
 }
 
  .banner-container-with-bg {
     width: 100%;
+    object-fit: cover;
+}
 
-    background: url("./mens-chrono.jpg")
+.banner-img {
+    max-width: 100%;
+    max-height: 100%;
 }

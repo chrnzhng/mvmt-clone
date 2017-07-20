@@ -45,13 +45,19 @@ class Watches extends Component {
             <div className="header">
                 <Header />
             </div>
-            <div className="banner-container">           
-            </div>           
+            <div className="banner-container-with-bg"> 
+                <img className="banner-img" src={require("./mens-chrono.jpg")}>   
+                </img>       
+            </div>
+            <section className="watches-main-section">
+            <div className="watches-side-nav">
+            </div>          
             
               
-             <div className="large-wrapper">
+             <div className="watches-wrapper">
                { MensWatches }
             </div> 
+            </section>
            
                 <div className="footer">
                     <Footer />
