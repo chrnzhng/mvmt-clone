@@ -1,27 +1,29 @@
 import React, { Component } from 'react';
-// import { Grid, Row, Col, Thumbnail, Button } from 'react-bootstrap';
+import { SplitButton, MenuItem } from 'react-bootstrap';
 import "./watches_detail.css";
 
 class WatchesDetail extends Component {
     render() {
         return (
-            <div className="not-a-wrapper">
-          
-             <div className="thumbnail-wrapper">
-             
-                {/* <Thumbnail src={"/assets/thumbnaildiv.png"} alt="242x200">
-                    <h3>Thumbnail label</h3> */}
-                    <div className="thumbnail">
-                    <p>{this.props.image}</p>
-                    {/* <p>Description</p>
-                    <p>
-                    <Button bsStyle="primary">Button</Button>&nbsp;
-                    <Button bsStyle="default">Button</Button>
-                    </p>
-                </Thumbnail> */}
-                    </div>
-              
-               </div>
+            <div className="large-wrapper">
+            {/* <section className="collection-bar">
+                  <div className="navvie-left">HOME / CHRONO COLLECTION</div>
+                  <div className="navvie-right">Sort By Featured</div>
+            </section>  */}
+              {/* <div className="side-bar-nav">
+                  <SplitButton title="Dropdown right" pullRight id="split-button-pull-right">
+                    <MenuItem eventKey="1">Action</MenuItem>
+                    <MenuItem eventKey="2">Another action</MenuItem>
+                    <MenuItem eventKey="3">Something else here</MenuItem>
+                    <MenuItem divider />
+                    <MenuItem eventKey="4">Separated link</MenuItem>
+                  </SplitButton>
+              </div>          */}
+            <div className="thumbnail-wrapper">          
+                <div className="thumbnail">
+                        <img className="watch-img" src={this.props.image} />          
+                </div>              
+              </div>
             
             
             </div>

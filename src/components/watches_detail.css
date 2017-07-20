@@ -1,1 +1,13 @@
+.large-wrapper {
+    display: flex;
+    width: 75%;
+}
 
+.thumbnail-wrapper {
+    width: 25%;
+}
+
+.watch-img {
+    height: 234px;
+    width: 234px;
+}
