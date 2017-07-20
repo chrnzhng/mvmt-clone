@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
+
 import axios from 'axios';
 import WatchesDetail from './watches_detail';
+import Header from './header/header';
+import Footer from './footer/footer';
 
 class Watches extends Component {
     constructor(){
@@ -35,7 +38,20 @@ class Watches extends Component {
             }) 
         return (
             <div>
+            <div className="header">
+                <Header />
+            </div>
+            <div className="banner-container">           
+            </div>           
+            
+              
+             <div>
                { MensWatches }
+            </div> 
+           
+                <div className="footer">
+                    <Footer />
+                </div>
             </div>
         );
     }

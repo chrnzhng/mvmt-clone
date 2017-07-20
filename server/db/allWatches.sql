@@ -1,2 +1,2 @@
-select * from Watches
--- join Inventory on Inventory.product_id = Watches.product_id
+SELECT * FROM Watches
+-- JOIN Inventory ON Inventory.product_id = Watches.product_id
