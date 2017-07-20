@@ -5,6 +5,8 @@ import WatchesProduct from './watches_products';
 import Header from '../header/header';
 import Footer from '../footer/footer';
 
+import './mens_watches.css';
+
 class Watches extends Component {
     constructor(){
         super();
@@ -47,7 +49,7 @@ class Watches extends Component {
             </div>           
             
               
-             <div>
+             <div className="large-wrapper">
                { MensWatches }
             </div> 
            
