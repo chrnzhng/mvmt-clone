@@ -39,8 +39,8 @@ const Header = () => {
                     </Col>
                     <Col xs={6} md={4} className="header-nav-right">
                         <NavDropdown eventKey={3} title="Account" id="basic-nav-dropdown">
-                            <MenuItem eventKey={3.1}>Action</MenuItem>
-                            <MenuItem eventKey={3.2}>Another action</MenuItem>
+                            <MenuItem eventKey={3.1}><a href="">Login</a></MenuItem>
+                            <MenuItem eventKey={3.2}>Sign Up</MenuItem>
                         </NavDropdown>
                         <img className="profile" src={require('./user.svg')}/>
                         <NavDropdown eventKey={3} title="Account" id="basic-nav-dropdown"></NavDropdown>
