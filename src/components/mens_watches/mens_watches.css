@@ -12,9 +12,15 @@
 
 } */
 
+.watches-main-section {
+    display: flex;
+    width: 100%;
+}
+
 .watches-side-nav {
     display: flex;
     width: 25%;
+    height: 100vh;
     background-color: dodgerblue;
 }
 
