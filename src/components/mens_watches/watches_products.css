@@ -1,0 +1,24 @@
+.large-wrapper {
+    display: flex;
+    width: 100%;
+    /* height: 100vh; */
+    align-items: baseline;
+    justify-content: flex-end;
+    
+}
+
+.left-side-nav {    
+    width: 25%;  
+    background-color: dodgerblue;
+}
+
+.thumbnail-wrapper {
+    justify-content: flex-end;
+
+    
+}
+
+.watch-img {
+    height: 234px;
+    width: 234px;
+}

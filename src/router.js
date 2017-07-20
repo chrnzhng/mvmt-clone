@@ -3,9 +3,9 @@ import {Switch, Route} from 'react-router-dom'
 
 import Home from './components/home';
 
-import Watches from './components/mens_watches';
-import Details from './components/details';
-import Cart from './components/cart';
+import Watches from './components/mens_watches/mens_watches';
+import Details from './components/details/details';
+import Cart from './components/cart/cart';
 
 export default (
     <Switch>

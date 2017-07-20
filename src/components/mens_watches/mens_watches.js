@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 
 import axios from 'axios';
-import WatchesDetail from './watches_detail';
-import Header from './header/header';
-import Footer from './footer/footer';
+import WatchesProduct from './watches_products';
+import Header from '../header/header';
+import Footer from '../footer/footer';
 
 class Watches extends Component {
     constructor(){
@@ -28,8 +28,10 @@ class Watches extends Component {
 
         const MensWatches = this.state.watches
             .map((watches, i) => {
-                return <WatchesDetail
+                return <WatchesProduct
                             image = { watches.image }
+                            color = { watches.color }
+                            size = { watches.size }
                             name = { watches.product_name }
                             price = { watches.price }
                             key = { watches.id }
