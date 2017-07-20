@@ -10,6 +10,9 @@ class Details extends Component {
                     <Header />
                 </div>
                 <section className="main-container">
+                    <div className="size-guide"></div>
+                    <div className="watch-face-lg"></div>
+                    <div className="cart-block"></div>
                 </section>
                 <div>
                     <Footer />

@@ -1,0 +1,26 @@
+.main-container {
+    display: flex;
+    height: 700px;
+    width: 100%;
+   
+}
+
+.size-guide {
+    display: flex;
+    width: 20%;
+    height: 100vh;
+    color: purple;
+}
+
+.watch-face-lg {
+    display: flex;
+    width: 50%;
+    height: 100vh;
+    color: dodgerblue;
+}
+.cart-block {
+    display: flex;
+    width: 30%;
+    height: 100vh;
+    color: seagreen;
+}
