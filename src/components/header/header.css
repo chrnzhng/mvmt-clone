@@ -1,74 +1,69 @@
  .fixed-nav {
-    
-    /* position: fixed; */
-} 
-.header-top-navbar {
-    background-color: #2c2c2c;
-    text-align: center;
-    color: #fff;
-    font-size: 12px;
-    
-    text-transform: uppercase;
-    font-family: 'Roboto Condensed', sans-serif;
-    letter-spacing: 1px;
-    padding-top: 20px;
-    padding-bottom: 30px;    
-    margin: auto;
-    /* display: none; */
-    width: 100%;
-    height: 20px;
+     /* position: fixed; */
+ }
+
+ .header-top-navbar {
+     background-color: #2c2c2c;
+     text-align: center;
+     color: #fff;
+     font-size: 12px;
+     text-transform: uppercase;
+     font-family: 'Roboto Condensed', sans-serif;
+     letter-spacing: 1px;
+     padding-top: 20px;
+     padding-bottom: 30px;
+     margin: auto;
+     width: 100%;
+     height: 20px;
+ }
+
+ .show-grid {
+     display: flex;
+ }
+
+ #basic-nav-dropdown {
+     font-size: 18px;
+     list-style-type: none;
+ }
+
+ .header-nav-left {
+     display: flex;
+     justify-content: center;
+     padding: 29px;
+     max-width: 100%;
+     font-family: 'Roboto Condensed', sans-serif;
+ }
+
+ .header-nav-right {
+     display: flex;
+     justify-content: center;
+     padding: 29px;
+     max-width: 100%;
+     font-family: 'Roboto Condensed', sans-serif;
+ }
+
+ .header-nav-div {
+     display: flex;
+     justify-content: center;
+     object-fit: contain;
+ }
+
+ .header-nav-logo {
+     height: 81px;
+ }
+
+ .profile,
+ .cart,
+ .search {
+     height: 14px;
+     margin-top: 4px;
+     margin-right: 5px;
+ }
+
+ .dropdown {
+     list-style-type: none;
+ }
+
+p {
+    font: 15px;
 }
-
-.show-grid{
-    display: flex;
-}
-
-#basic-nav-dropdown {
-    font-size: 18px;
-    list-style-type: none;
-}
-
-/* .li.dropdown {
-    list-style-type: none;
-} */
-.header-nav-left{
-    display: flex;
-     justify-content: center;     
-    padding: 10px; 
-    max-width: 100%;
-    font-family: 'Roboto Condensed', sans-serif;    
-}
-
-/* .header-nav-left li {
-    
-} */
-
-.header-nav-right{
-    display: flex;
-     justify-content: center;    
-    padding: 10px; 
-    max-width: 100%; 
-    font-family: 'Roboto Condensed', sans-serif;
-}
-.header-nav-div {
-    display: flex;
-    justify-content: center;
-}
-.header-nav-logo {
-    height: 42.8px;
-    max-width: 100%;
-}
-
-.profile, .cart, .search {
-    height: 14px;
-    margin-top: 4px;
-    margin-right: 5px;
-    
-}
-
-.dropdown {
-    list-style-type: none;
-}
-
-
-

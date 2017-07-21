@@ -13,7 +13,7 @@ const Header = () => {
                     <Col xs={6} md={4}>
                         <div className="header-nav-left">
                             <NavDropdown eventKey={3} title="Mens" id="basic-nav-dropdown">
-                                <MenuItem eventKey={3.1} href="http:/localhost:3000/menswatches">Watches</MenuItem>
+                                <MenuItem eventKey={3.1} href="/menswatches">Watches</MenuItem>
                                 <MenuItem eventKey={3.2}>Sunglasses</MenuItem>
                                 <MenuItem eventKey={3.3}>Straps</MenuItem>
                                 <MenuItem divider/>
@@ -42,11 +42,10 @@ const Header = () => {
                          <NavDropdown eventKey={3} title="Account" id="basic-nav-dropdown">
                             <MenuItem eventKey={3.1} href="http://localhost:3001/auth">Login</MenuItem>
                             <MenuItem eventKey={3.2}>Sign Up</MenuItem>
-                         </NavDropdown> 
-                        
+                         </NavDropdown>                        
                         <img className="profile" src={require('./user.svg')}/>
-                        <NavDropdown eventKey={3} title="Account" id="basic-nav-dropdown"></NavDropdown>
-                        <img className="cart" src={require('./cart.svg')}/>
+                        <NavDropdown eventKey={3} title="Cart" id="basic-nav-dropdown"></NavDropdown>
+                        <a href="http://localhost:3000/cart"><img className="cart" src={require('./cart.svg')}/></a>
                         <img className="search" src={require('./search.svg')}/>
                     </Col>
 

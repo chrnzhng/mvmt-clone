@@ -1,26 +1,38 @@
 .main-container {
     display: flex;
-    height: 700px;
+    height: 100vh; 
     width: 100%;
+
+    /* object-fit: contain; */
+    color: dodgerblue;
+    margin: 5px;
+    
    
 }
 
 .size-guide {
-    display: flex;
-    width: 20%;
-    height: 100vh;
+ 
+    width: 15%;    
     color: purple;
 }
 
 .watch-face-lg {
     display: flex;
-    width: 50%;
-    height: 100vh;
-    color: dodgerblue;
+    object-fit: contain;
+    max-width: 50%;
+    height: 730px;
+    padding: 47px;
+   
 }
+
+.face-lg {
+ 
+    object-fit: contain;
+    max-width: 100%;
+} 
 .cart-block {
     display: flex;
-    width: 30%;
-    height: 100vh;
+    
+    width: 35%;
     color: seagreen;
 }
