@@ -8,14 +8,14 @@ import './home_body.css';
 const Homebody = () => {
     return (
         <div className="home-view">
-            <Row className="top-grid">
-                <Col className="mens" lg={6} lgPush={6}>
-                    <img className="watch_img" src={require('./womens_watches.jpeg')}/>
-                </Col>
-                <Col className="womens" lg={6} lgPull={6}>
+            <section className="top-grid">
+                <div className="mens">
                     <img className="watch_img" src={require('./mens_watches.jpeg')}/>
-                </Col>
-            </Row>
+                </div>
+                <div className="womens">
+                    <img className="watch_img" src={require('./womens_watches.jpeg')}/>
+                </div>
+            </section>
             <Col className="sunglass_row">
                 <img className="sunglasses" src={require('./sunglasses.jpeg')}/>
             </Col>

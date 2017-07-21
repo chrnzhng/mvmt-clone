@@ -1,8 +1,8 @@
 
 
 .home-view {
-    margin: 5px; 
-    align-content: center;
+    margin: 100px; 
+    /* align-content: center; */
 }
 
 .show-grid {
@@ -10,7 +10,15 @@
     
 }
 
-  .mens {
+.top-grid {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    object-fit: contain;
+
+}
+
+.mens {
     display: block;
    
 }
