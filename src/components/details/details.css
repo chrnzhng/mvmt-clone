@@ -32,7 +32,12 @@
 } 
 .cart-block {
     display: flex;
-    
+    /* object-fit: contain; */
     width: 35%;
     color: seagreen;
+}
+
+.fit {
+    width: 100%;
+    object-fit: contain;
 }

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Slider } from 'react-slick';
+import Slider from 'react-slick';
 
 class DetailsCarousel extends Component {
     render() {
@@ -11,13 +11,11 @@ class DetailsCarousel extends Component {
       slidesToScroll: 1
     };
     return (
-      <Slider {...settings}>
-        <div><img src={require("./black-leather.jpg")}></img></div>
-        <div><img src={require("./black-leather.jpg")}></img></div>
-        <div><img src={require("./black-leather.jpg")}></img></div>
-        <div><img src={require("./black-leather.jpg")}></img></div>
-        <div><img src={require("./black-leather.jpg")}></img></div>
-        <div><img src={require("./black-leather.jpg")}></img></div>
+      <Slider className="strap" {...settings}>
+        <div><img className="test" src={require("./black-leather.jpg")}></img></div>
+        <div><img className="test" src={require("./black-leather.jpg")}></img></div>
+        <div><img className="test" src={require("./black-leather.jpg")}></img></div>
+        <div><img className="test" src={require("./black-leather.jpg")}></img></div>        
       </Slider>
     );
   }

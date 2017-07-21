@@ -24,9 +24,10 @@ class Details extends Component {
                         <p>CHRONO SERIES - 45 MM</p>
                         <h3>GUNMETAL SANDSTONE</h3>
                         <h4>$135.00</h4>
-                        
+                        <div className="fit">
+                         <DetailsCarousel />
                         </div>
-                        {/* <DetailsCarousel /> */}
+                        </div>
                     </div>
                 </section>
                 <div>
