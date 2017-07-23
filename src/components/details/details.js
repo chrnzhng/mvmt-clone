@@ -5,6 +5,7 @@ import DetailsCarousel from './details_carousel/details_carousel';
 import './details.css';
 
 class Details extends Component {
+    
     render() {
         return (
             <div>
@@ -25,7 +26,7 @@ class Details extends Component {
                         <h3>GUNMETAL SANDSTONE</h3>
                         <h4>$135.00</h4>
                         <div className="fit">
-                         <DetailsCarousel />
+                          <DetailsCarousel /> 
                         </div>
                         </div>
                     </div>

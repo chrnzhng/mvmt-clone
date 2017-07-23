@@ -12,10 +12,10 @@ class DetailsCarousel extends Component {
     };
     return (
       <Slider className="strap" {...settings}>
-        <div><img className="test" src={require("./black-leather.jpg")}></img></div>
-        <div><img className="test" src={require("./black-leather.jpg")}></img></div>
-        <div><img className="test" src={require("./black-leather.jpg")}></img></div>
-        <div><img className="test" src={require("./black-leather.jpg")}></img></div>        
+        <div><img className="test" src={require("../details_img/black-leather.jpg")}></img></div>
+        <div><img className="test" src={require("../details_img/black-leather.jpg")}></img></div>
+        <div><img className="test" src={require("../details_img/black-leather.jpg")}></img></div>
+        <div><img className="test" src={require("../details_img/black-leather.jpg")}></img></div>        
       </Slider>
     );
   }
