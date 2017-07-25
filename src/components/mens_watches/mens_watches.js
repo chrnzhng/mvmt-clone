@@ -36,6 +36,7 @@ class Watches extends Component {
                             size = { watches.size }
                             name = { watches.product_name }
                             price = { watches.price }
+                            id = { watches.id }
                             key = { watches.id }
                     
                             />                

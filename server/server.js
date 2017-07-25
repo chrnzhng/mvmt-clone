@@ -77,6 +77,7 @@ massive( connectionString ).then( dbInstance => {
     req.logout();
     res.redirect('/');
     })
+    app.get('/WatchId/:id', products_controller.getId)
 
 
 } );
