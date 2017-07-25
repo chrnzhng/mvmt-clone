@@ -44,7 +44,9 @@ class Details extends Component {
                         <h3>{this.state.watch.color}</h3>
                         <h4>${this.state.watch.price}.00</h4>
                         <div className="fit">
-                          <DetailsCarousel /> 
+                          {/* <DetailsCarousel />  */}
+                          <button className="btn btn-default">Add to Cart</button>
+                              
                         </div>
                         </div>
                     </div>

@@ -6,7 +6,7 @@ import "./watches_products.css";
 class WatchesProduct extends Component {
     render() {
         return (         
-            <div className="left-side-nav">            
+            // <div className="left-side-nav">            
                 <div className="thumbnail-wrapper">          
                     <div className="thumbnail">
                         <Link to={`/watches/details/${this.props.id}`}><img className="watch-img" src={this.props.image} /></Link>
@@ -15,7 +15,7 @@ class WatchesProduct extends Component {
                         <p>${this.props.price}.00</p>          
                     </div>              
                 </div>
-            </div>                       
+            // </div>                       
         );
     }
 }

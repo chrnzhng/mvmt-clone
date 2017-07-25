@@ -7,14 +7,14 @@
     
 }  */
 
-.left-side-nav {    
+/* .left-side-nav {    
     justify-content: flex-start;
     width: 25%;  
     background-color: dodgerblue;
-}
+} */
 
 .thumbnail-wrapper {
-    justify-content: flex-end;
+    justify-content: center;
 
     
 }
