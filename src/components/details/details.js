@@ -11,6 +11,7 @@ class Details extends Component {
         this.state = { 
             watch: {}
         }
+        this.addToCart = this.addToCart.bind(this);
     }
 
         componentDidMount() {
@@ -22,6 +23,20 @@ class Details extends Component {
                 });
                 console.log(this.state)
             });
+        }
+
+        addToCart() {
+            let config = {
+                watchid: this.state.watch.id,
+                watchname: this.state.watch.product_name,
+                watchimg: this.state.watch.image,
+                watchprice: this.state.watch.price,
+                watchcolor: this.state.watch.color
+            }
+
+            axios.post('http://localhost:3001/addToCart', config)
+            .then( (config) => config)
+            .catch( (err) => err);
     }
 
     render() {
@@ -45,7 +60,7 @@ class Details extends Component {
                         <h4>${this.state.watch.price}.00</h4>
                         <div className="fit">
                           {/* <DetailsCarousel />  */}
-                          <button className="btn btn-default">Add to Cart</button>
+                          <button className="btn btn-default" onClick = {this.addToCart}>Add to Cart</button>
                               
                         </div>
                         </div>

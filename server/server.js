@@ -3,7 +3,8 @@ const session = require('express-session');
 const bodyParser = require('body-parser');
 const massive = require('massive')
 const cors = require('cors');
-const products_controller = require('./products_controller/products_controller')
+const products_controller = require('./products_controller/products_controller');
+const cart_controller = require('./cart_controller/cart_controller');
 const connectionString = require('./postgres.js')
 const passport = require('passport');
 const Auth0Strategy = require('passport-auth0')
@@ -19,6 +20,11 @@ app.use(cors({
 
 massive( connectionString ).then( dbInstance => {
     app.set('db' , dbInstance);
+    
+    dbInstance.setSchema().then(() => console.log('Tables successfully reset!')).catch(err => console.log(err));
+
+
+
     app.get('/MensWatches', products_controller.getAll)
     app.use(session({
     resave: true, 
@@ -79,6 +85,7 @@ massive( connectionString ).then( dbInstance => {
     })
     app.get('/WatchId/:id', products_controller.getId)
 
+    app.post('/addToCart', cart_controller.addToCart)
 
 } );
 

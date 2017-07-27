@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { FormControl, FormGroup, ControlLabel, HelpBlock, Form, Checkbox, Radio, Button } from 'react-bootstrap';
+import { Table, FormControl, FormGroup, ControlLabel, HelpBlock, Form, Checkbox, Radio, Button } from 'react-bootstrap';
 
 import './cart.css';
 
@@ -113,7 +113,7 @@ class Cart extends Component {
     </Button>
   </form>
             </section>
-    <section className="cart-right">
+    {/* <section className="cart-right">
             YOUR CART:<br></br>
             <div>
             <img src={require('./sandstone-small.jpg')} />
@@ -121,7 +121,26 @@ class Cart extends Component {
             Sandstone</div>
             
             
-    </section>
+    </section> */}
+     <Table className="cart-right" responsive>
+    <thead>
+      <tr>
+        <th>YOUR CART:</th>
+        <th></th>
+       
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><img src={require('./sandstone-small.jpg')} /></td>
+        <td>Quantity:</td>
+        <td>Product name</td>
+        <td>Subtotal:</td>
+        <td>SHIPPING -</td>
+        <td>TOTAL: USD</td>
+      </tr>     
+    </tbody>
+  </Table>
             </section>
             </div>
         );
