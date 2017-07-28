@@ -84,8 +84,10 @@ massive( connectionString ).then( dbInstance => {
     res.redirect('/');
     })
     app.get('/WatchId/:id', products_controller.getId)
+    app.get('/readCart', cart_controller.getCart)
 
     app.post('/addToCart', cart_controller.addToCart)
+
 
 } );
 

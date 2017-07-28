@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Table, FormControl, FormGroup, ControlLabel, HelpBlock, Form, Checkbox, Radio, Button } from 'react-bootstrap';
-
+import { Table, FormControl, FormGroup, ControlLabel, HelpBlock, Form, Checkbox, Radio, Button, ListGroup, ListGroupItem } from 'react-bootstrap';
+import axios from 'axios';
 import './cart.css';
 
 function FieldGroup({ id, label, help, ...props }) {
@@ -13,138 +13,111 @@ function FieldGroup({ id, label, help, ...props }) {
   );
 }
 
-class Cart extends Component {
+export default class Cart extends Component {
+  constructor(props){
+    super(props) 
+      this.state = {
+        cart: []
+  
+      }
+    
+  }
+  componentDidMount() {
+        const results = axios.get(`/readCart`)
+            .then(res => res.data)
+            .then((finalResult) => {
+                this.setState({
+                    cart: finalResult
+                });
+                console.log('cart', this.state)
+            });
+        }
     render() {
+        const items = this.state.cart.map((items, id) => {
+            return (
+              <div key={items.id}>
+               
+ 
+        <ListGroupItem><img className ="test-style" src={items.watchimg} /></ListGroupItem>
+        <ListGroupItem>Quantity:</ListGroupItem>
+        <ListGroupItem>{items.watchname}</ListGroupItem>
+        <ListGroupItem>Subtotal:</ListGroupItem>
+        <ListGroupItem>SHIPPING -</ListGroupItem>
+        <ListGroupItem>${items.watchprice}.00</ListGroupItem>
+    
+   
+  </div>
+
+            
+            )
+
+        })
+   
         return (
             <div>
                 <section className="logo-header">
-                    <img src={require("./logo-white.png")} />
+                    <a href='http://localhost:3000'><img src={require("./logo-white.png")} /></a>
                 </section>
                 <section className="cart-body">
                 <section className="left-form">
                     <form>
-    <FieldGroup
-      id="formControlsText"
-      type="text"
-      label="Text"
-      placeholder="Enter text"
-    />
-    <FieldGroup
-      id="formControlsEmail"
-      type="email"
-      label="Email address"
-      placeholder="Enter email"
-    />
-    <FieldGroup
-      id="formControlsPassword"
-      label="Password"
-      type="password"
-    />
-    <FieldGroup
-      id="formControlsFile"
-      type="file"
-      label="File"
-      help="Example block-level help text here."
-    />
+    
+                      <h3>SHIPPING ADDRESS:</h3>
+                      <div className="test">
+                      <FieldGroup
+                        id="formControlsText"
+                        type="text"
+                            
+                        placeholder="First Name"
+                        />
+                        <FieldGroup
+                        id="formControlsText"
+                        type="text"
+                
+                        placeholder="Last Name"
+                        />
+                        </div>
+                       
+                      <div className="testt">
+                        <FieldGroup
+                        id="formControlsText"
+                        type="text"
+                    
+                        placeholder="Address"
+                        />
+                        <FieldGroup
+                        id="formControlsText"
+                        type="text"
+                    
+                        placeholder="Apt, Suite, Etc.(Optional)"
+                        />
+                        <FieldGroup
+                        id="formControlsText"
+                        type="text"
+                    
+                        placeholder="City"
+                        />
+                        </div>                      
+                      </form>
+                </section>
 
-    <Checkbox checked readOnly>
-      Checkbox
-    </Checkbox>
-    <Radio checked readOnly>
-      Radio
-    </Radio>
-
-    <FormGroup>
-      <Checkbox inline>
-        1
-      </Checkbox>
-      {' '}
-      <Checkbox inline>
-        2
-      </Checkbox>
-      {' '}
-      <Checkbox inline>
-        3
-      </Checkbox>
-    </FormGroup>
-    <FormGroup>
-      <Radio name="radioGroup" inline>
-        1
-      </Radio>
-      {' '}
-      <Radio name="radioGroup" inline>
-        2
-      </Radio>
-      {' '}
-      <Radio name="radioGroup" inline>
-        3
-      </Radio>
-    </FormGroup>
-
-    <FormGroup controlId="formControlsSelect">
-      <ControlLabel>Select</ControlLabel>
-      <FormControl componentClass="select" placeholder="select">
-        <option value="select">select</option>
-        <option value="other">...</option>
-      </FormControl>
-    </FormGroup>
-    <FormGroup controlId="formControlsSelectMultiple">
-      <ControlLabel>Multiple select</ControlLabel>
-      <FormControl componentClass="select" multiple>
-        <option value="select">select (multiple)</option>
-        <option value="other">...</option>
-      </FormControl>
-    </FormGroup>
-
-    <FormGroup controlId="formControlsTextarea">
-      <ControlLabel>Textarea</ControlLabel>
-      <FormControl componentClass="textarea" placeholder="textarea" />
-    </FormGroup>
-
-    <FormGroup>
-      <ControlLabel>Static text</ControlLabel>
-      <FormControl.Static>
-        email@example.com
-      </FormControl.Static>
-    </FormGroup>
-
-    <Button type="submit">
-      Submit
-    </Button>
-  </form>
-            </section>
-    {/* <section className="cart-right">
-            YOUR CART:<br></br>
-            <div>
-            <img src={require('./sandstone-small.jpg')} />
-            Chrono Gunmetal $135.00<br></br>
-            Sandstone</div>
-            
-            
-    </section> */}
-     <Table className="cart-right" responsive>
+     <div className="cart-right">
     <thead>
       <tr>
         <th>YOUR CART:</th>
         <th></th>
+        {items}
        
       </tr>
     </thead>
-    <tbody>
-      <tr>
-        <td><img src={require('./sandstone-small.jpg')} /></td>
-        <td>Quantity:</td>
-        <td>Product name</td>
-        <td>Subtotal:</td>
-        <td>SHIPPING -</td>
-        <td>TOTAL: USD</td>
-      </tr>     
-    </tbody>
-  </Table>
+
+  </div>
+  
             </section>
             </div>
         );
     }
+      
 }
 
-export default Cart;
+

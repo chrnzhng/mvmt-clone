@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
   
-    height: 50px;
+    height: 63px;
     width: 100%;
     background-color: black;
 }
@@ -20,6 +20,16 @@
 
 .cart-right {
     width: 45%;
-    height: 100vh;
+    /* height: 100vh; */
     background-color: dodgerblue;
+    
+}
+
+.test, .testt {
+    display: flex;
+}
+
+.test-style {
+    height: 100px;
+    
 }
