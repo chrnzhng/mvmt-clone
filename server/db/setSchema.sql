@@ -11,8 +11,8 @@ CREATE TABLE cart(
     watchcolor text
 );
 
-insert into cart (userid, watchid, inventoryid, watchimg, watchname, watchprice, watchcolor)
-values (1, 1, 1, 'https://s3-us-west-1.amazonaws.com/mvmt-clone/1-front.jpeg', 'Gunmetal Sandstone', 135, 'Purp Nurp');
+-- insert into cart (userid, watchid, inventoryid, watchimg, watchname, watchprice, watchcolor)
+-- values (1, 1, 1, 'https://s3-us-west-1.amazonaws.com/mvmt-clone/1-front.jpeg', 'Gunmetal Sandstone', 135, 'Purp Nurp');
 
 CREATE TABLE users(
     id serial primary key,

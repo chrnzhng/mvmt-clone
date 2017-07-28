@@ -9,27 +9,76 @@
 
 .cart-body {
     display: flex;
-    margin: 50px;
+    margin: 10px;
 }
+
+.pay-buttons {
+    display: flex;
+}
+
+.paypal {
+    background:  #ffc520;
+    width: 150px;
+    height: 40px;
+    margin-right: 5px;
+
+}
+/* url(./paypal.png) no-repeat */
+
+.amazon {
+    background:  #fad676;
+    width: 150px;
+    height: 40px;
+}
+/* url(./amazon.png) no-repeat */
+
+.pPpic {
+    width: 63px;
+    height: 18px;
+}
+
+.aZpic {
+    width: 69%;
+}
+
 
 .left-form {
     display: flex;
     width: 55%;
     height: 100vh;
+
 }
 
 .cart-right {
     width: 45%;
     /* height: 100vh; */
-    background-color: dodgerblue;
+
+
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0;
+
     
 }
 
-.test, .testt {
+.test, .testt, .testtt {
     display: flex;
+
 }
 
 .test-style {
     height: 100px;
     
 }
+
+.form-group {
+    padding-left: 15px;
+    margin: 5px;
+}
+
+/* .total {
+    width: 100%;
+    padding-left: 600px;
+} */
+
+
