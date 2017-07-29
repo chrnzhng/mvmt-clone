@@ -1,1 +1,1 @@
-Select * from cart
+SELECT * FROM cart

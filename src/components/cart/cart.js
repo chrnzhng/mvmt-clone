@@ -1,12 +1,12 @@
 import React, {Component} from 'react';
 import {
- 
+
   FormControl,
   FormGroup,
   ControlLabel,
   HelpBlock,
   Form,
-  
+
   Button,
   ListGroup,
   ListGroupItem
@@ -46,6 +46,23 @@ export default class Cart extends Component {
         console.log('cart', this.state)
       });
   }
+
+  removeFromCart(id) {
+    const results = axios
+      .delete(`/removeFromCart/${id}`)
+      .then(() => {
+        axios
+          .get(`/readCart`)
+          .then(response => {
+            this.setState({cart: response.data})
+          })
+      })
+  }
+
+  // axios.get(`/getsum`)         .then(res => res.data)
+  // .then((finalResult) => {             this.setState({                 cart:
+  // finalResult[0]             });         });
+
   render() {
     const items = this
       .state
@@ -64,6 +81,9 @@ export default class Cart extends Component {
 
               <ListGroupItem>${items.watchprice}.00</ListGroupItem>
             </div>
+            <button className="remove" onClick={() => this.removeFromCart(items.id)}>
+              Remove
+            </button>
             {/* <ListGroupItem>Quantity:</ListGroupItem>
    <ListGroupItem>Subtotal:</ListGroupItem>
    <ListGroupItem>SHIPPING -</ListGroupItem> */}
@@ -78,7 +98,7 @@ export default class Cart extends Component {
         </section>
         <section className="cart-body">
           <section className="left-form">
-            
+
             <form>
               <div className="pay-buttons">
                 <button className="paypal btn btn-default">
@@ -106,15 +126,9 @@ export default class Cart extends Component {
               </div>
               <div className="testtt">
                 <FieldGroup id="formControlsText" type="text" placeholder="Country"/>
-                <FieldGroup
-                  id="formControlsText"
-                  type="text"
-                  placeholder="State"/>
-                  <FieldGroup
-                  id="formControlsText"
-                  type="text"
-                  placeholder="Zip code"/>
-              
+                <FieldGroup id="formControlsText" type="text" placeholder="State"/>
+                <FieldGroup id="formControlsText" type="text" placeholder="Zip code"/>
+
               </div>
               <div>
                 <FieldGroup id="formControlsText" type="text" placeholder="Phone"/>
@@ -127,17 +141,16 @@ export default class Cart extends Component {
             <div className="cart-info-container">
               {items}
             </div>
-         <div className="total">
-            <ListGroup>
-              <ListGroupItem>SUBTOTAL:</ListGroupItem>
-              <ListGroupItem>SHIPPING -</ListGroupItem>
-            </ListGroup>
-            <ListGroup>
-              <ListGroupItem>TOTAL:</ListGroupItem>
-            </ListGroup>
+            <div className="total">
+              <ListGroup>
+                <ListGroupItem>SUBTOTAL:</ListGroupItem>
+                <ListGroupItem>SHIPPING -</ListGroupItem>
+              </ListGroup>
+              <ListGroup>
+                <ListGroupItem>TOTAL:</ListGroupItem>
+              </ListGroup>
+            </div>
           </div>
-          </div>
-         
 
         </section>
       </div>

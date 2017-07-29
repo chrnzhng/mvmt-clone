@@ -3,9 +3,12 @@ const session = require('express-session');
 const bodyParser = require('body-parser');
 const massive = require('massive')
 const cors = require('cors');
-const products_controller = require('./products_controller/products_controller');
-const cart_controller = require('./cart_controller/cart_controller');
+
+const products_controller = require('./controllers/products_controller/products_controller');
+const cart_controller = require('./controllers/cart_controller/cart_controller');
+
 const connectionString = require('./postgres.js')
+
 const passport = require('passport');
 const Auth0Strategy = require('passport-auth0')
 const config = require('./config');
@@ -24,8 +27,6 @@ massive( connectionString ).then( dbInstance => {
     dbInstance.setSchema().then(() => console.log('Tables successfully reset!')).catch(err => console.log(err));
 
 
-
-    app.get('/MensWatches', products_controller.getAll)
     app.use(session({
     resave: true, 
     saveUninitialized: true, 
@@ -44,17 +45,11 @@ massive( connectionString ).then( dbInstance => {
     //all three of the domian file,client secret and other stuff from Auth0 goes into config.js
         function(accessToken, refreshToken, extraParams, profile, done) {
         console.log('someone tried to access', profile);
-
-        
-
+       
 
     //logic for passing in new or existing account
 
-
-
-
-
-        done(null, {loggedIn : true})
+    done(null, {loggedIn : true})
     }));
     
 
@@ -83,10 +78,20 @@ massive( connectionString ).then( dbInstance => {
     req.logout();
     res.redirect('/');
     })
+
+    // GET Requests
+
+    app.get('/MensWatches', products_controller.getAll)
     app.get('/WatchId/:id', products_controller.getId)
     app.get('/readCart', cart_controller.getCart)
 
+    // POST
+
     app.post('/addToCart', cart_controller.addToCart)
+
+    // DELETE
+
+    app.delete('/removeFromCart/:id', cart_controller.deleteFromCart)
 
 
 } );
