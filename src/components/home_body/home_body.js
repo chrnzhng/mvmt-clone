@@ -33,21 +33,18 @@ const Homebody = () => {
                     <Button>See Our Story</Button>
                 </Col>
             </Row>
-            <section className="instaposts">
 
+            <section className="instaposts">
                 <div className="left-insta">
-                    {/* <div  className="lefty"> */}
+              
                     <img className="left-img" src={require('./instagram/left-one.jpg')}/>
-                    {/* </div> */}
-                    {/* <div className="lefty"> */}
+                  
                     <img className="left-img" src={require('./instagram/left-one.jpg')}/>
-                    {/* </div> */}
-                    {/* <div className="lefty"> */}
+              
                     <img className="left-img" src={require('./instagram/left-one.jpg')}/>
-                    {/* </div> */}
-                    {/* <div className="lefty"> */}
+    
                     <img className="left-img" src={require('./instagram/left-one.jpg')}/>
-                    {/* </div> */}
+
                 </div>
 
                 <div className="center-insta">
@@ -55,21 +52,19 @@ const Homebody = () => {
                 </div>
                 
                 <div className="right-insta">
-                    {/* <div className="righty"> */}
+     
                     <img className="right-img" src={require('./instagram/left-one.jpg')}/>
-                    {/* </div> */}
-                    {/* <div className="righty"> */}
+                   
                     <img className="right-img" src={require('./instagram/left-one.jpg')}/>
-                    {/* </div> */}
-                    {/* <div className="righty"> */}
+                
                     <img className="right-img" src={require('./instagram/left-one.jpg')}/>
-                    {/* </div> */}
-                    {/* <div className="righty"> */}
+                 
                     <img className="right-img" src={require('./instagram/left-one.jpg')}/>
-                    {/* </div>  */}
+                   
                 </div>
-
+                
             </section>
+
             <Row className="press-block">
                 <Col className="our-story">
                     <h3>See what the press is saying about MVMT</h3>
@@ -83,3 +78,38 @@ const Homebody = () => {
 };
 
 export default Homebody;
+
+
+                
+
+                // <div className="left-insta-container">
+                //     <div className="left-img1">
+                //      <img src={require('./instagram/left-one.jpg')} ></img>
+                //     </div>
+                //     <div className="left-img1">
+                //      <img src={require('./instagram/left-one.jpg')} ></img>
+                //     </div>
+                //     <div className="left-img1"> 
+                //      <img src={require('./instagram/left-one.jpg')} ></img>
+                //     </div>
+                //     <div className="left-img1"> 
+                //      <img src={require('./instagram/left-one.jpg')} ></img>  
+                //     </div>
+                //     {/* <img className="left-img2" src={require('./instagram/left-two.jpg')} ></img>
+                //     <img className="left-img3" src={require('./instagram/left-two.jpg')} ></img>
+                //     <img className="left-img4" src={require('./instagram/left-two.jpg')} ></img> */}
+                // </div>
+                    
+                // <div className="center-insta-container">
+                //     <img className="center-img" src={require('./instagram/center.jpg')} ></img>
+                // </div>
+
+                // <div className="right-insta-container">
+                //      <img className="right-img1" src={require('./instagram/left-one.jpg')} ></img>
+                //      <img className="right-img1" src={require('./instagram/left-one.jpg')} ></img>
+                //      <img className="right-img1" src={require('./instagram/left-one.jpg')} ></img>
+                //      <img className="right-img1" src={require('./instagram/left-one.jpg')} ></img> 
+                //     {/* <img className="right-img2" src={require('./instagram/left-two.jpg')} ></img>
+                //     <img className="right-img3" src={require('./instagram/left-two.jpg')} ></img>
+                //     <img className="right-img4" src={require('./instagram/left-two.jpg')} ></img> */}
+                // </div>
