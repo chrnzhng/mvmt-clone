@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    height: 100vh; 
+    height: 600px; 
     width: 100%;
 
 
@@ -20,9 +20,9 @@
 
 .watch-face-lg {
     display: flex;
-    object-fit: contain;
+    object-fit: cover;
     max-width: 50%;
-    height: 730px;
+ 
     padding: 47px;
    
 }
@@ -36,8 +36,16 @@
     display: flex;
     /* object-fit: contain; */
     width: 35%;
+    height: 100%;
     color: seagreen;
     /* overflow: hidden; */
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.cart-info {
+    max-width: 50%;
 }
 
 .fit {

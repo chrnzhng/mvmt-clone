@@ -47,14 +47,14 @@ class Details extends Component {
                 </div>
                 <section className="main-container">
                     <div className="size-guide">
-                        Size Guide
+                        <h3>Size Guide</h3>
                     </div>
                     <div className="watch-face-lg">
                          <img className="face-lg" src={this.state.watch.image}></img> 
                     
                     </div>
                     <div className="cart-block">
-                        <div>
+                        <div className="cart-info">
                         <p>{this.state.watch.product_name} SERIES - {this.state.watch.size}</p>
                         <h3>{this.state.watch.color}</h3>
                         <h4>${this.state.watch.price}.00</h4>
