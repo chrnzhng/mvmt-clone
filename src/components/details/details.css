@@ -1,12 +1,12 @@
 .main-container {
     display: flex;
     flex-direction: row;
-    /* align-items: center; */
+    justify-content: center;
     height: 100vh; 
     width: 100%;
 
-    /* object-fit: contain; */
-    color: dodgerblue;
+
+
     margin: 5px;
     
    

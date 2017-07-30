@@ -26,13 +26,12 @@
     padding: 0px;
 }
 
-
 .instaposts {
     display: flex;
     margin: 5px;
     width: 100%;
     height: 500px;
-    align-items: center;
+    align-content: center;
 }
 
 .left-insta,
@@ -45,24 +44,28 @@
 
 .center-insta {
     width: 33.33%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .left-img {
     height: 50%;
     width: 50%;
+    object-fit: cover
 }
 
 .center-img {
     max-width: 100%;
     max-height: 100%;
-    object-fit: fill;
-
+    object-fit: cover;
 }
 
 .right-img {
     height: 50%;
     width: 50%;
-} 
+    object-fit: cover
+}
 
 .btn {
     margin-bottom: 5px;
@@ -83,13 +86,6 @@
     display: flex;
 }
 
-
-/* 
-.center-block {
-    max-width: 100%;
-    margin: auto;
-} */
-
 .our-story {
     text-align: center;
     width: 100%;
@@ -103,47 +99,3 @@ h4 {
     max-height: 100%;
     font-family: 'Roboto Condensed', sans-serif;
 }
-
-
-/* TEST STYLING
-
-.instaposts {
-    display: flex;
- 
-    margin: 5px;
-    width: 100%;
-    height: 500px;
-
-    
-}
-
- 
-.left-insta-container,
-.center-insta-container,
-.right-insta-container {
-    height: 100%;
-    width: 33.33%;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.left-img1 {
-    height: 25%;    
-    width: 25%; 
-    max-height: 25%;
-    max-width: 25%;
-    object-fit: contain;
-}
-
-.center-img {
-    max-width: 100%;
-    object-fit: cover
-}
-
-.right-img1 {
-    height: 25%;
-    width: 25%; 
-    max-height: 25%;
-    max-width: 25%;
-    object-fit: cover
-} */

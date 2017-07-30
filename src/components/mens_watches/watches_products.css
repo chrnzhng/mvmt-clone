@@ -14,12 +14,21 @@
 } */
 
 .thumbnail-wrapper {
-    justify-content: center;
+    
+
+    margin: 5px;
+    display: flex;
 
     
 }
+/* 
+.thumb-test {
+    width: 25%;
+} */
 
-.watch-img {
-    height: 234px;
-    width: 234px;
-}
+
+ .watch-size {
+    height: 280px;
+    width: 280px;
+   
+} 
