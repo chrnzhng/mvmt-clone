@@ -1,16 +1,7 @@
-/* .parent-container {
+.nav-styling {
     display: flex;
-    width: 100%;
-
+    justify-content: space-between;
 }
-
-.chrono-banner {
-    display: flex;
-    width: 100%;
-    object-fit: fill;   
-    
-
-} */
 
 .watches-main-section {
     display: flex;
@@ -18,47 +9,68 @@
     justify-content: center;
 }
 
-/* .watches-side-nav {
-    display: flex;
-    width: 25%;
-    height: 100vh;
-    background-color: dodgerblue;
-} */
-
 .watches-wrapper {
     display: flex;
     width: 75%;
     height: 100%;
-    /* height: 100vh; */
     flex-wrap: wrap;
     justify-content: center;
-    
 }
 
- .banner-container-with-bg {
+.banner-container-with-bg {
     display: flex;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
- .banner-img {
+.banner-img {
     width: 100%;
     height: 100%;
-    
-} 
+}
 
-.container{
+.container {
     display: flex;
-    justify-content: space-between; 
     width: 100%;
-    
 }
 
-/* .dropdown-coll {
-    justify-content: flex-start;
+.power-bottom {
+    display: flex;
+    width: 100%;
+    height: 500px;
+    justify-content: center;
 }
 
-.dropdown-sort-filter {
-    justify-content: flex-end;
-} */
+.bottom-top-left,
+.bottom-top-right {
+    width: 38%;
+}
+
+.explore-block {
+    height: 257px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.four-watches {
+    height: 1200px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.f-series,
+.classic,
+.modern-sport,
+.voyager {
+    max-width: 35%;
+    object-fit: cover;
+    padding: 5px;
+}
+
+
