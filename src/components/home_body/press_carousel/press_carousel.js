@@ -16,13 +16,21 @@ class PressCarousel extends Component {
         }
         return (
             <Slider {...settings}>
-                <div><h3>"MVMT seeks to keep watches simple and
-                     affordable while still making a statement
+                <div><h3>"MVMT seeks to keep watches simple and<br></br>
+                     affordable while still making a statement<br></br>
                      with their look"</h3><img className = "test" src= {require('./press-img-1.svg')} /></div>
-                <div><img className = "test" src= {require('./press-img-2.svg')} /></div>
-                <div><img className = "test" src= {require('./press-img-3.svg')} /></div>
-                <div><img className = "test" src= {require('./press-img-4.svg')} /></div>
-                <div><img className = "test" src= {require('./press-img-5.svg')} /></div>                
+                <div><h3>"MVMT seeks to keep watches simple and<br></br>
+                     affordable while still making a statement<br></br>
+                     with their look"</h3><img className = "test" src= {require('./press-img-2.svg')} /></div>
+                <div><h3>"MVMT seeks to keep watches simple and<br></br>
+                     affordable while still making a statement<br></br>
+                     with their look"</h3><img className = "test" src= {require('./press-img-3.svg')} /></div>
+                <div><h3>"MVMT seeks to keep watches simple and<br></br>
+                     affordable while still making a statement<br></br>
+                     with their look"</h3><img className = "test" src= {require('./press-img-4.svg')} /></div>
+                <div><h3>"MVMT seeks to keep watches simple and<br></br>
+                     affordable while still making a statement<br></br>
+                     with their look"</h3><img className = "test" src= {require('./press-img-5.svg')} /></div>                
             </Slider>
         );
     }

@@ -84,7 +84,7 @@ massive( connectionString ).then( dbInstance => {
     app.get('/MensWatches', products_controller.getAll)
     app.get('/WatchId/:id', products_controller.getId)
     app.get('/readCart', cart_controller.getCart)
-    // app.get('/sumCart', cart_controller.getSum)
+    app.get('/sumCart', cart_controller.getSum)
 
     // POST
 

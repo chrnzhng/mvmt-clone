@@ -26,9 +26,9 @@ const Homebody = () => {
                 </div>
 
             </section>
-            <section className="show-grid">
-                <div className="our-story">
-                    <h4>Founded on the belief that style shouldn't break the bank...</h4>
+            <section className="our-story">
+                <div>
+                    <h4>Founded on the belief that style<br></br> shouldn't break the bank...</h4>
                     <Button>See Our Story</Button>
                 </div>
             </section>

@@ -32,18 +32,28 @@ export default class Cart extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      cart: []
+      cart: [],
+      sumCart: [],
 
     }
-
+    // this.clearCart = this.clearCart.bind(this);
   }
   componentDidMount() {
-    const results = axios
+
+    const items = axios
       .get(`/readCart`)
       .then(res => res.data)
       .then((finalResult) => {
         this.setState({cart: finalResult});
         console.log('cart', this.state)
+      });
+
+    const results = axios
+      .get(`/sumCart`)
+      .then(res => res.data)
+      .then((finalResult) => {
+        this.setState({sumCart: finalResult[0]});
+        console.log('sumCart', this.state.sumCart)
       });
   }
 
@@ -59,9 +69,13 @@ export default class Cart extends Component {
       })
   }
 
-  // axios.get(`/getsum`)         .then(res => res.data)
-  // .then((finalResult) => {             this.setState({                 cart:
-  // finalResult[0]             });         });
+  // clearCart() {
+  //   var newSum = this.state.sumCart - this.state.sumCart
+
+  //   this.setState ={
+  //     sumCart: newSum
+  //   }
+  // }
 
   render() {
     const items = this
@@ -147,8 +161,12 @@ export default class Cart extends Component {
                 <ListGroupItem>SHIPPING -</ListGroupItem>
               </ListGroup>
               <ListGroup>
-                <ListGroupItem>TOTAL:</ListGroupItem>
+                <ListGroupItem>TOTAL: ${this.state.sumCart.sum}.00
+                  
+                </ListGroupItem>
+                <button onClick={() => this.clearCart()}>Checkout</button>
               </ListGroup>
+
             </div>
           </div>
 

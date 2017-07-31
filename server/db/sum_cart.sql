@@ -1,3 +1,3 @@
 SELECT 
-SUM(price) 
+SUM(watchprice) 
 FROM cart
