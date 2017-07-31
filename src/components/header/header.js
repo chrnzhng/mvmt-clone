@@ -8,7 +8,7 @@ const Header = () => {
     return (
         <div className="fixed-nav">
             <Row className="header-top-navbar">Free Shipping On Orders Over $50</Row>
-       
+                <div>
                 <Row className="">
                     <Col xs={6} md={4}>
                         <div className="header-nav-left">
@@ -50,6 +50,7 @@ const Header = () => {
                     </Col>
 
                 </Row>
+            </div>
          
         </div>
     );
