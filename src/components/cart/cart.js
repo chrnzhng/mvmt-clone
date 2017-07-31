@@ -34,9 +34,10 @@ export default class Cart extends Component {
     this.state = {
       cart: [],
       sumCart: [],
+      hide: false
 
     }
-    // this.clearCart = this.clearCart.bind(this);
+    this.clearCart = this.clearCart.bind(this);
   }
   componentDidMount() {
 
@@ -69,13 +70,14 @@ export default class Cart extends Component {
       })
   }
 
-  // clearCart() {
-  //   var newSum = this.state.sumCart - this.state.sumCart
+  clearCart() {
+    var newSum = this.state.sumCart.sum - this.state.sumCart.sum
 
-  //   this.setState ={
-  //     sumCart: newSum
-  //   }
-  // }
+    this.setState ={
+      sumCart: newSum,
+      hidden: true
+    }
+  }
 
   render() {
     const items = this
@@ -89,7 +91,7 @@ export default class Cart extends Component {
               <ListGroupItem><img className="test-style" src={items.watchimg}/>
               </ListGroupItem>
             </div>
-            <div className="cart-info">
+            <div className="cart-info" hidden={this.state.hide}>
 
               <ListGroupItem>{items.watchname}-{items.watchcolor}</ListGroupItem>
 
