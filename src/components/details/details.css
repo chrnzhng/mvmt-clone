@@ -66,7 +66,7 @@
     display: flex;
     width: 100%;
     height: 18px;
-
+    margin-bottom: 25px;
     justify-content: space-around    
 }
 
@@ -78,6 +78,17 @@
 
 }
 
+.styled-insta {
+    display: flex;
+    width:100%;
+    height: 500px;
+    background: seagreen;
+}
+
+.test-carousel {
+    max-width: 100%;
+    object-fit: cover;
+}
 .left-cont {
     width: 50%;
     display: flex;

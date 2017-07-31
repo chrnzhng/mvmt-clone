@@ -82,7 +82,14 @@
 .left-img {
     height: 50%;
     width: 50%;
-    object-fit: cover
+    object-fit: cover;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+.left-img:hover, .right-img:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100);
 }
 
 .center-img {
@@ -95,7 +102,9 @@
 .right-img {
     height: 50%;
     width: 50%;
-    object-fit: cover
+    object-fit: cover;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
 }
 
 .btn {

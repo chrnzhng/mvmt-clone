@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import axios from 'axios';
 import Header from '../header/header';
 import Footer from '../footer/footer';
-import DetailsCarousel from './details_carousel/details_carousel';
+import {ControlledCarousel} from './details_carousel/details_carousel';
 import './details.css';
 
 class Details extends Component {
@@ -97,6 +97,11 @@ class Details extends Component {
                         <p>100% SECURE CHECKOUT</p>
                     </div>
                 </section>
+                <section className="styled-insta">
+                    <div>
+                        <ControlledCarousel className="test-carousel"/>
+                    </div>
+                </section>
                 <section className="benefits-sec">
                     <div className="left-cont">
                         <div className="watch-face-lg-specs">
@@ -107,6 +112,8 @@ class Details extends Component {
                         <h1>IT'S ALL IN THE DETAILS</h1>
                     </div>
                 </section>
+              
+                
                 <div>
                     <Footer/>
                 </div>
