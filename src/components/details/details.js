@@ -77,18 +77,36 @@ class Details extends Component {
                             </div>
                         </div>
                     </div>
-                    
+
                 </section>
                 <section className="benefits-banner">
-                        <img className="testt-pic" src={require("./details_img/shipping-black.svg")}/>
+                    <div className="testt-pic">
+                        <img src={require("./details_img/shipping-black.svg")}/>
                         <p>FREE SHIPPING WORLDWIDE</p>
-                        <img className="testt-pic" src={require("./details_img/returns-black.svg")}/>
-                        <p>FREE RETURNS WORLDWIDE</p>         
-                        <img className="testt-pic" src={require("./details_img/warranty-icon-black.svg")}/>
+                    </div>
+                    <div className="testt-pic">
+                        <img src={require("./details_img/returns-black.svg")}/>
+                        <p>FREE RETURNS WORLDWIDE</p>
+                    </div>
+                    <div className="testt-pic">
+                        <img src={require("./details_img/warranty-icon-black.svg")}/>
                         <p>24-MONTH WARRANTY</p>
-                        <img className="testt-pic" src={require("./details_img/secure-black.svg")}/>
+                    </div>
+                    <div className="testt-pic">
+                        <img src={require("./details_img/secure-black.svg")}/>
                         <p>100% SECURE CHECKOUT</p>
-                    </section>
+                    </div>
+                </section>
+                <section className="benefits-sec">
+                    <div className="left-cont">
+                        <div className="watch-face-lg-specs">
+                            <img className="face-lg" src={this.state.watch.image}></img>
+                        </div>
+                    </div>
+                    <div className="specs">
+                        <h1>IT'S ALL IN THE DETAILS</h1>
+                    </div>
+                </section>
                 <div>
                     <Footer/>
                 </div>

@@ -65,13 +65,34 @@
 .benefits-banner {
     display: flex;
     width: 100%;
-    height: 16px;
+    height: 18px;
 
-    justify-content: center;
-    
+    justify-content: space-around    
 }
 
-.testt-pic {
+.benefits-sec {
+    height: 680px;
+    width: 100%;
+    background: #f7f8f9;
+    display: flex;
+
+}
+
+.left-cont {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.watch-face-lg-specs {
+    width: 600px;
+    height: 600px;
+    background: #f7f8f9;
+}
+
+.specs {
+    width: 50%;
 
 }
 .fit {
