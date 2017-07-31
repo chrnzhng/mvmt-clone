@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from 'react-bootstrap';
+
 import PressCarousel from './press_carousel/press_carousel.js';
 import './home_body.css';
 
@@ -28,8 +28,8 @@ const Homebody = () => {
             </section>
             <section className="our-story">
                 <div>
-                    <h4>Founded on the belief that style<br></br> shouldn't break the bank...</h4>
-                    <Button>See Our Story</Button>
+                    <h3>Founded on the belief that style<br></br> shouldn't break the bank...</h3>
+                    <button className = "mvmt">See Our Story</button>
                 </div>
             </section>
 
