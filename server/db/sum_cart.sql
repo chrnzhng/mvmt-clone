@@ -1,3 +1,3 @@
-SELECT * 
+SELECT 
 SUM(price) 
 FROM cart
