@@ -1,9 +1,7 @@
 import React from 'react';
-import {Col, Row, Button} from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 import PressCarousel from './press_carousel/press_carousel.js';
 import './home_body.css';
-
-
 
 const Homebody = () => {
     return (
@@ -16,23 +14,24 @@ const Homebody = () => {
                     <img className="watch_img" src={require('./womens_watches.jpeg')}/>
                 </div>
             </section>
-            <Col className="sunglass_row">
+            <section className="sunglass_row">
                 <img className="sunglasses" src={require('./sunglasses.jpeg')}/>
-            </Col>
-            <Row className="show-grid">
-                <Col lg={12} lg={8}>
+            </section>
+            <section className="show-grid">
+                <div >
                     <img className="docks" src={require('./docks.jpeg')}/>
-                </Col>
-                <Col className="carousel-strap" lg={6} lg={4}>
-                    <img className="center-block" src={require('./strap_selector.gif')}/>
-                </Col>
-            </Row>
-            <Row className="show-grid">
-                <Col className="our-story">
+                </div>
+                <div className="strap-div">
+                    <img className="carousel-strap" src={require('./strap_selector.gif')}/>
+                </div>
+
+            </section>
+            <section className="show-grid">
+                <div className="our-story">
                     <h4>Founded on the belief that style shouldn't break the bank...</h4>
                     <Button>See Our Story</Button>
-                </Col>
-            </Row>
+                </div>
+            </section>
 
             <section className="instaposts">
                 <div className="left-insta">
@@ -65,12 +64,12 @@ const Homebody = () => {
 
             </section>
 
-            <Row className="press-block">
-                <Col className="our-story">
+            <div className="press-block">
+                <div className="our-story">
                     <h3>See what the press is saying about MVMT</h3>
                     <PressCarousel className="pressC"/>
-                </Col>
-            </Row>
+                </div>
+            </div>
         </div>
 
     );
