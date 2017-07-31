@@ -66,7 +66,7 @@ const Homebody = () => {
 
             <div className="press-block">
                 <div className="our-story">
-                    <h3>See what the press is saying about MVMT</h3>
+                    <h2>See what the press is saying about MVMT</h2>
                     <PressCarousel className="pressC"/>
                 </div>
             </div>
