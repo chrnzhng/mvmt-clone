@@ -54,31 +54,31 @@ class Footer extends Component {
                         <div className="fcolumn1">
                             <p>SHOP MVMT</p><br></br>
                             <br></br>
-                            <p>SHOP MVMT</p><br></br>
-                            <p>SHOP MVMT</p><br></br>
-                            <p>SHOP MVMT</p><br></br>
-                            <p>SHOP MVMT</p><br></br>
+                            <p>SHOP MVMT</p>
+                            <p>SHOP MVMT</p>
+                            <p>SHOP MVMT</p>
+                            <p>SHOP MVMT</p>
 
 
                         </div>
                         <div className="fcolumn2">
                             <p>CUSTOMER SERVICE</p><br></br>
                             <br></br>
-                            <p>MY ACCOUNT</p><br></br>
-                            <p>CONTACT US</p><br></br>
-                            <p>SHIPPING &amp;RETURNS</p><br></br>
-                            <p>STORE LOCATOR</p><br></br>
-                            <p>SITE MAP</p><br></br>
-                            <p>FAQ</p><br></br>
+                            <p>MY ACCOUNT</p>
+                            <p>CONTACT US</p>
+                            <p>SHIPPING &amp;RETURNS</p>
+                            <p>STORE LOCATOR</p>
+                            <p>SITE MAP</p>
+                            <p>FAQ</p>
                         </div>
                         <div className="fcolumn3">
                             <p>#JOINTHEMVMT</p><br></br>
                             <br></br>
-                            <p>OUR STORY</p><br></br>
-                            <p>OUR BLOG</p><br></br>
-                            <p>SHARE US</p><br></br>
-                            <p>CONTACT US</p><br></br>
-                            <p>BECOME AN AFFILIATE</p><br></br>
+                            <p>OUR STORY</p>
+                            <p>OUR BLOG</p>
+                            <p>SHARE US</p>
+                            <p>CONTACT US</p>
+                            <p>BECOME AN AFFILIATE</p>
                         </div>                          
                         
                     </section>

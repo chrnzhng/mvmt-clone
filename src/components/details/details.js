@@ -98,6 +98,9 @@ class Details extends Component {
                     </div>
                 </section>
                 <section className="styled-insta">
+                    <div className="insta-banner">
+                    <h1>SEE IT STYLED ON INSTAGRAM</h1>
+                    </div>
                     <div className="test-carousel">
                         <SimpleSlider />
                     </div>
@@ -111,8 +114,8 @@ class Details extends Component {
                     <div className="specs">
                         <h1>IT'S ALL IN THE DETAILS</h1>
                         <div className="specs-btn">
-                            <button>Read the specs</button>
-                            <button>See the style</button>
+                            <button>READ THE SPECS</button>
+                            <button>SEE THE STYLE</button>
                         </div>
                         <div className="specs-info">
                         <div className="row"><div>CASE SIZE</div><div>45 MM</div></div>

@@ -1,17 +1,26 @@
-.slick-slide img {
+  .slick-slide img {
     height: 270px;
     width: 270px;
-}
-
-.test-cont {
-    margin: 0 auto;
+    
+} 
+ 
+ .test-cont {
+    width: 100%;
+    height: 500px;
+    display: block;
+    margin: auto 0;
     padding: 40px;
+
+    
+} 
+
+/* .wrap-slider {
     display: flex;
     
-}
 
-.slider-tester {
+} */
+/* .slider-tester {
     width: 20%;
     height: 270px;
-}
+}   */
 
