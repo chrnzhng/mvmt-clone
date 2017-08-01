@@ -94,10 +94,10 @@ class Watches extends Component {
                 </section>
                 <section className="power-bottom">
                     <div className="bottom-top-left">
-                        <img className="banner-img" src={require("./msunglass.jpeg")}></img>
+                        <img className="banner-img-test" src={require("./msunglass.jpeg")}></img>
                     </div>
                     <div className="bottom-top-right">
-                        <img className="banner-img" src={require("./mstrap.jpeg")}></img>
+                        <img className="banner-img-test" src={require("./mstrap.jpeg")}></img>
                     </div>
                 </section>
                 <section className="explore-block">
@@ -110,16 +110,16 @@ class Watches extends Component {
                 </section>
                 <section className="four-watches">
                     <div className="f-series">
-                        <img className="banner-img" src={require("./40.jpeg")}></img>
+                        <img className="banner-img-test" src={require("./40.jpeg")}></img>
                     </div>
                     <div className="classic">
-                        <img className="banner-img" src={require("./classic.jpeg")}></img>
+                        <img className="banner-img-test" src={require("./classic.jpeg")}></img>
                     </div>
                     <div className="modern-sport">
-                        <img className="banner-img" src={require("./modern-sport.jpeg")}></img>
+                        <img className="banner-img-test" src={require("./modern-sport.jpeg")}></img>
                     </div>
                     <div className="voyager">
-                        <img className="banner-img" src={require("./voyager.jpeg")}></img>
+                        <img className="banner-img-test" src={require("./voyager.jpeg")}></img>
                     </div>
                 </section>
 
