@@ -115,12 +115,12 @@ class Details extends Component {
                             <button>See the style</button>
                         </div>
                         <div className="specs-info">
-                        <div><div>CASE SIZE</div><div>45 MM</div></div>
-                        <div><div>CASE SIZE</div><div>45 MM</div></div>
-                        <div><div>CASE SIZE</div><div>45 MM</div></div>
-                        <div><div>CASE SIZE</div><div>45 MM</div></div>
-                        <div><div>CASE SIZE</div><div>45 MM</div></div>
-                        <div><div>CASE SIZE</div><div>45 MM</div></div>
+                        <div className="row"><div>CASE SIZE</div><div>45 MM</div></div>
+                        <div className="row"><div>CASE SIZE</div><div>45 MM</div></div>
+                        <div className="row"><div>CASE SIZE</div><div>45 MM</div></div>
+                        <div className="row"><div>CASE SIZE</div><div>45 MM</div></div>
+                        <div className="row"><div>CASE SIZE</div><div>45 MM</div></div>
+                        <div className="row"><div>CASE SIZE</div><div>45 MM</div></div>
                         </div>
                     </div>
                 </section>
