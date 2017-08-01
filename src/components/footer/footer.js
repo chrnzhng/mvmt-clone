@@ -97,7 +97,9 @@ class Footer extends Component {
                 <section className="footer-bottom">
                     <div className="country-picker">
                         <img className="flag" src={require('./usa.png')}/>
+                        <div className="usa">
                         <p>UNITED STATES OF AMERICA</p>
+                        </div>
                     </div>
                 </section>
                 <section className="footer-bottom-bottom">
