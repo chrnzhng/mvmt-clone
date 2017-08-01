@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import axios from 'axios';
 import Header from '../header/header';
 import Footer from '../footer/footer';
-import {ControlledCarousel} from './details_carousel/details_carousel';
+import SimpleSlider from './details_carousel/details_carousel';
 import './details.css';
 
 class Details extends Component {
@@ -98,8 +98,8 @@ class Details extends Component {
                     </div>
                 </section>
                 <section className="styled-insta">
-                    <div>
-                        <ControlledCarousel className="test-carousel"/>
+                    <div className="test-carousel">
+                        <SimpleSlider />
                     </div>
                 </section>
                 <section className="benefits-sec">
@@ -110,6 +110,18 @@ class Details extends Component {
                     </div>
                     <div className="specs">
                         <h1>IT'S ALL IN THE DETAILS</h1>
+                        <div className="specs-btn">
+                            <button>Read the specs</button>
+                            <button>See the style</button>
+                        </div>
+                        <div className="specs-info">
+                        <div><div>CASE SIZE</div><div>45 MM</div></div>
+                        <div><div>CASE SIZE</div><div>45 MM</div></div>
+                        <div><div>CASE SIZE</div><div>45 MM</div></div>
+                        <div><div>CASE SIZE</div><div>45 MM</div></div>
+                        <div><div>CASE SIZE</div><div>45 MM</div></div>
+                        <div><div>CASE SIZE</div><div>45 MM</div></div>
+                        </div>
                     </div>
                 </section>
               

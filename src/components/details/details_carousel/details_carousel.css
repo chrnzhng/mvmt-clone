@@ -1,10 +1,17 @@
-/* .strap {
-    object-fit: contain;
-    width: 100%;
+.slick-slide img {
+    height: 270px;
+    width: 270px;
 }
 
-.test {
-    margin: auto;
-   
+.test-cont {
+    margin: 0 auto;
+    padding: 40px;
+    display: flex;
+    
 }
- */
+
+.slider-tester {
+    width: 20%;
+    height: 270px;
+}
+

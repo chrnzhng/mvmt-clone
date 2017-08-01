@@ -51,19 +51,36 @@ class Footer extends Component {
                             <br></br>M-T 8:30-2:00 pm &amp; F 9-1 pm PST</p>
                     </section>
                     <section className="footer-nav">
-                        <div>
-                            <Nav bsStyle="tabs" justified activeKey={1} onSelect={this.handleSelect}>
-                                <NavItem eventKey={1} href="/home">NavItem 1 content</NavItem>
-                                <NavItem eventKey={2} title="Item">NavItem 2 content</NavItem>
-                                <NavItem eventKey={3} disabled>NavItem 3 content</NavItem>
-                            </Nav>
-                            <br/>
-                            <Nav bsStyle="pills" justified activeKey={1} onSelect={this.handleSelect}>
-                                <NavItem eventKey={1} href="/home">NavItem 1 content</NavItem>
-                                <NavItem eventKey={2} title="Item">NavItem 2 content</NavItem>
-                                <NavItem eventKey={3} disabled>NavItem 3 content</NavItem>
-                            </Nav>
+                        <div className="fcolumn1">
+                            <p>SHOP MVMT</p><br></br>
+                            <br></br>
+                            <p>SHOP MVMT</p><br></br>
+                            <p>SHOP MVMT</p><br></br>
+                            <p>SHOP MVMT</p><br></br>
+                            <p>SHOP MVMT</p><br></br>
+
+
                         </div>
+                        <div className="fcolumn2">
+                            <p>CUSTOMER SERVICE</p><br></br>
+                            <br></br>
+                            <p>MY ACCOUNT</p><br></br>
+                            <p>CONTACT US</p><br></br>
+                            <p>SHIPPING &amp;RETURNS</p><br></br>
+                            <p>STORE LOCATOR</p><br></br>
+                            <p>SITE MAP</p><br></br>
+                            <p>FAQ</p><br></br>
+                        </div>
+                        <div className="fcolumn3">
+                            <p>#JOINTHEMVMT</p><br></br>
+                            <br></br>
+                            <p>OUR STORY</p><br></br>
+                            <p>OUR BLOG</p><br></br>
+                            <p>SHARE US</p><br></br>
+                            <p>CONTACT US</p><br></br>
+                            <p>BECOME AN AFFILIATE</p><br></br>
+                        </div>                          
+                        
                     </section>
                     <section className="sign-up">Sign up for newsletter
                         <FormGroup>
@@ -94,3 +111,5 @@ class Footer extends Component {
 }
 
 export default Footer;
+
+
