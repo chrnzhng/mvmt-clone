@@ -14,8 +14,9 @@
 } */
 
 .thumbnail-wrapper {
+    font-family: sans-serif !important;
+    text-align: center;
     
-
     margin: 5px;
     display: flex;
 

@@ -111,15 +111,28 @@ class Watches extends Component {
                 <section className="four-watches">
                     <div className="f-series">
                         <img className="banner-img-test" src={require("./40.jpeg")}></img>
+                        <div className="watches-link"><img className="tile-icon" src={require("./link1.png")} />
+                        <div className="tile-text"><p>40 SERIES</p>
+                            </div>
+                        </div>
                     </div>
                     <div className="classic">
                         <img className="banner-img-test" src={require("./classic.jpeg")}></img>
+                        <div className="watches-link"><img className="tile-icon" src={require("./link2.png")} />
+                        <div className="tile-text"><p>40 SERIES</p>
+                            </div></div>
                     </div>
                     <div className="modern-sport">
                         <img className="banner-img-test" src={require("./modern-sport.jpeg")}></img>
+                        <div className="watches-link"><img className="tile-icon" src={require("./link3.png")} />
+                        <div className="tile-text"><p>40 SERIES</p>
+                            </div></div>
                     </div>
                     <div className="voyager">
                         <img className="banner-img-test" src={require("./voyager.jpeg")}></img>
+                        <div className="watches-link"><img className="tile-icon" src={require("./link4.png")} />
+                        <div className="tile-text"><p>40 SERIES</p>
+                            </div></div>
                     </div>
                 </section>
 

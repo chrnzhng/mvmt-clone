@@ -32,7 +32,7 @@
 }
 
 .banner-img-test {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
     width: 100%;
 }
 .container {
@@ -51,6 +51,7 @@
 .bottom-top-left,
 .bottom-top-right {
     width: 38%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .explore-block {
@@ -69,6 +70,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 55px;
+    
 }
 
 .f-series,
@@ -81,4 +84,38 @@
 
 }
 
+.watches-link{
 
+  
+    height: 56px;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+
+
+
+.tile-icon {
+    margin-left: 5px;
+    margin-top: 5px;
+
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+}
+
+.tile-text  {
+    display: inline-block;
+    margin-left: 5px;
+   
+    
+}
+
+.tile-text p {
+    font-size: 15px;
+    
+}
+
+.testt-pic, img {
+padding-right: 0px !important;
+}
