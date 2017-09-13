@@ -31,6 +31,7 @@
     
 }
 
+
 .banner-img-test {
     
     width: 100%;
@@ -80,7 +81,7 @@
 .voyager {
     max-width: 35%;
     object-fit: cover;
-    padding: 5px;
+    padding: 13px;
 
 }
 

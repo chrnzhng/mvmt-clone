@@ -53,7 +53,7 @@ class Footer extends Component {
                     <section className="footer-nav">
                         <div className="fcolumn1">
                             <p>SHOP MVMT</p><br></br>
-                            <br></br>
+                            
                             <p>SHOP MVMT</p>
                             <p>SHOP MVMT</p>
                             <p>SHOP MVMT</p>
@@ -63,7 +63,7 @@ class Footer extends Component {
                         </div>
                         <div className="fcolumn2">
                             <p>CUSTOMER SERVICE</p><br></br>
-                            <br></br>
+                            
                             <p>MY ACCOUNT</p>
                             <p>CONTACT US</p>
                             <p>SHIPPING &amp;RETURNS</p>
@@ -73,7 +73,7 @@ class Footer extends Component {
                         </div>
                         <div className="fcolumn3">
                             <p>#JOINTHEMVMT</p><br></br>
-                            <br></br>
+                            
                             <p>OUR STORY</p>
                             <p>OUR BLOG</p>
                             <p>SHARE US</p>

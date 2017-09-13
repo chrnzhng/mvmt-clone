@@ -44,7 +44,7 @@ massive( connectionString ).then( dbInstance => {
     //set up to here and then go to the Auth0 site and create a new app/client
     //all three of the domian file,client secret and other stuff from Auth0 goes into config.js
         function(accessToken, refreshToken, extraParams, profile, done) {
-        console.log('someone tried to access', profile);
+        console.log('Someone tried to access', profile);
        
 
     //logic for passing in new or existing account
